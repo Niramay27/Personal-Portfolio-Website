@@ -40,7 +40,7 @@ document.getElementById('terminalInput').addEventListener('keypress', function(e
             } else if (input.toLowerCase() === 'about') {
                 addItem('I am a tech enthusiast and research addict specializing in AI, ML, robotics, and computer vision');
             } else if (input.toLowerCase() === 'portfolio') {
-                addItem('Portfolio link: <a target="__blank"href="http://192.0.0.2:5500/portfolio.html">Link</a>');
+                addItem('Portfolio link: <a target="__blank"href="https://niramay27.github.io/portfolio/portfolio.html">Link</a>');
             } else if (input.toLowerCase() === 'contact') {
                 addItem('Contact: LinkedIn - <a <a target="__blank" href="https://www.linkedin.com/in/niramay-patel-481a08288/">Link</a>');
             } else {
