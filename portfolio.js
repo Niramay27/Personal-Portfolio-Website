@@ -117,7 +117,7 @@ let certi_link = [
                 <p style="font-size: 20px; color:white">My Learnings</p>
             </div>
             <div class="graph animate">
-                <a target="__blank" href="https://niramay27.github.io/portfolio/timeline.html">
+                <a target="__blank" href="https://portfolio-y344.onrender.com/timeline.html">
                     <button class="graph_btn"> Click</button>
                 </a>
             </div>`;
