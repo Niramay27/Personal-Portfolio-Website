@@ -76,10 +76,10 @@ let linkArray = [
 ];
 
 let certi_name = [
-    "Supervised Learning", "Data Science Course", "Project Completion", "Internship Completion"
+    "Supervised Learning", "Advanced Algorithm","Data Science Course", "Project Completion", "Internship Completion"
 ];
 let certi_img = [
-    "Supervised Learning.pdf", "Niramay_Jan_2024_participation_44298.pdf", "Niramay_Jan_2024_project_completion_Hate Speech.pdf", "Niramay_Mar_2024_internship_44298.pdf"
+    "Supervised Learning.pdf","Advanced Algorithm .pdf", "Niramay_Jan_2024_participation_44298.pdf", "Niramay_Jan_2024_project_completion_Hate Speech.pdf", "Niramay_Mar_2024_internship_44298.pdf"
 ];
 let certi_link = [
     "https://www.coursera.org/account/accomplishments/verify/VHZLMGDZHBH5", "https://www.1stop.ai/verify-certificate", "https://www.1stop.ai/verify-certificate", "https://www.1stop.ai/verify-certificate"
