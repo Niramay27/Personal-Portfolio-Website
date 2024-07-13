@@ -41,7 +41,8 @@ nav a {
 }
 
 /* Intro Section */
-.name, .passion {
+.name,
+.passion {
     color: wheat;
     text-align: center;
     margin: 20px;
@@ -54,7 +55,7 @@ nav a {
 .name {
     margin: 130px;
     margin-bottom: 50px;
-    padding-top: 120px;
+    padding-top: 70px;
     letter-spacing: 20px;
 }
 
@@ -65,37 +66,40 @@ nav a {
 
 /* About Section */
 .about {
-    display: flex;
-    flex-direction: row;
     margin-top: 70px;
 }
 
-.aboutMe {
-    width: 80%;
-}
-
-.about_head {
-    margin: 25px;
-    color: rgb(246, 92, 92);
-    font-family: "Fira Code", monospace;
-    font-weight: 400;
-}
-
-.about_para {
-    margin: 20px;
-    font-size: 19px;
-    color: white;
-}
-
-.learning {
-    color: rgb(246, 92, 92);
-    width: 40%;
+.aboutParas {
     text-align: center;
-    margin: 50px;
+}
+
+.head {
+    color: rgb(246, 92, 92);
     font-family: "Fira Code", monospace;
     font-weight: 400;
 }
-.graph_btn{
+
+.para {
+    display: inline-block;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    width: 261px;
+    height: 245px;
+    color: white;
+    word-wrap: break-word;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: 0.15s;
+}
+
+.para:hover {
+    background-color: rgb(53, 53, 53);
+}
+.graph_btn {
     margin: 10px;
     padding: 15px;
     width: 120px;
@@ -107,8 +111,8 @@ nav a {
 
 /* Projects Section */
 .proj_head {
-    margin-top: 15vh;
-    margin-bottom: 10vh;
+    margin-top: 70px;
+    margin-bottom: 80px;
     text-align: center;
     font-family: "Fira Code", monospace;
     font-weight: 400;
@@ -127,10 +131,25 @@ nav a {
 
 .li {
     text-align: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+    width: 261px;
+    height: 190px;
+    word-wrap: break-word;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.li:hover {
+    background-color: rgb(53, 53, 53);
 }
 
 .liHead {
+    color: rgb(246, 92, 92);
     font-family: "Fira Code", monospace;
+    font-weight: 400;
     font-size: 20px;
 }
 
@@ -140,17 +159,18 @@ nav a {
     margin: 30px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 18.5px;
 }
 
 /* Certificates Section */
-.certificates{
+.certificates {
     display: flex;
     flex-direction: column;
 }
+
 .certHead {
-    margin-top: 20vh;
-    margin-bottom: 7vh;
+    margin-top: 90px;
+    margin-bottom: 80px;
     text-align: center;
     font-family: "Fira Code", monospace;
     font-optical-sizing: auto;
@@ -161,7 +181,7 @@ nav a {
 
 .certs {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin: 2vw;
     justify-items: center;
@@ -172,6 +192,7 @@ nav a {
     font-family: "Fira Code", monospace;
     font-weight: 400;
 }
+
 .certi {
     margin: 1vh;
 }
@@ -195,8 +216,8 @@ nav a {
 
 /* Resume Section */
 .resHead {
-    margin-top: 15vh;
-    margin-bottom: 10vh;
+    margin-top: 90px;
+    margin-bottom: 80px;
     text-align: center;
     font-family: "Fira Code", monospace;
     font-weight: 400;
@@ -227,11 +248,13 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 100px;
     margin-bottom: 10vh;
 }
 
-.mailImg, .linkdinImg, .twitterImg {
+.mailImg,
+.linkdinImg,
+.twitterImg {
     filter: invert(1);
 }
 
@@ -240,12 +263,14 @@ nav a {
     margin-left: 15vw;
 }
 
-.linkdinImg, .twitterImg {
+.linkdinImg,
+.twitterImg {
     height: 5vh;
     margin-left: 5vw;
 }
 
 /* Animations */
+
 @keyframes move {
     0% {
         transform: translateY(-100%);
@@ -273,16 +298,20 @@ nav a {
         margin-top: 2vh;
     }
 
-    .name, .passion {
+    .name,
+    .passion {
         font-size: 18px;
         padding-top: 60px;
     }
 
-    .about, .learning, .resume_txt {
+    .about,
+    .learning,
+    .resume_txt {
         padding: 0 10px;
     }
 
-    .aboutMe, .liTxt {
+    .aboutMe,
+    .liTxt {
         width: 100%;
     }
 
@@ -295,7 +324,9 @@ nav a {
         grid-template-columns: 1fr;
     }
 
-    .mailImg, .linkdinImg, .twitterImg {
+    .mailImg,
+    .linkdinImg,
+    .twitterImg {
         height: 4vh;
         margin-left: 10vw;
     }
