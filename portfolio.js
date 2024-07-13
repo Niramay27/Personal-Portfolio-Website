@@ -74,7 +74,7 @@ let linkArray = [
 ];
 
 let certi_name = [
-    "Supervised Learning","Advanced Algorith", "Data Science Course", "Project Completion", "Internship Completion"
+    "Supervised Learning","Advanced Algorithm", "Data Science Course", "Project Completion", "Internship Completion"
 ];
 let certi_img = [
     "Supervised Learning.pdf", "Niramay_Jan_2024_participation_44298.pdf", "Niramay_Jan_2024_project_completion_Hate Speech.pdf", "Niramay_Mar_2024_internship_44298.pdf","Niramay_Mar_2024_internship_44298.pdf"
