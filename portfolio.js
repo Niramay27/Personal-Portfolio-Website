@@ -54,6 +54,11 @@ let passionArray = [
 let projectArray = [
     "P", "R", "O", "J", "E", "C", "T", "S"
 ];
+
+let internArray = [
+    "I", "N", "T", "E", "R", "N", "S", "H", "I", "P", "S"
+];
+
 let resumeArray = [
     "R", "E", "S", "U", "M", "E"
 ];
@@ -61,7 +66,7 @@ let contactMe = [
     "C", "O", "N", "T", "A", "C", "T", " ", "M", "E"
 ];
 let certifcateArray = [
-    "C", "E", "R", "T", "I", "F", "I", "C", "A", "T", "E","S"
+    "C", "E", "R", "T", "I", "F", "I", "C", "A", "T", "E", "S"
 ];
 let headingArray = [
     "Hate Speech Detection", "Spam SMS Classifier", "Credit EDA", "Hostel Accomodation", "Portfolio Website", "News App", "Music Player "
@@ -74,14 +79,15 @@ let linkArray = [
 ];
 
 let certi_name = [
-    "Supervised Learning","Advanced Algorithm", "Data Science Course", "Project Completion", "Internship Completion"
+    "Supervised Learning", "Advanced Algorithm", "Unsupervised Learning", "Data Science Course", "Personifwy Project ", "Personifwy Internship"
 ];
 let certi_img = [
-    "Supervised Learning.pdf", "Niramay_Jan_2024_participation_44298.pdf", "Niramay_Jan_2024_project_completion_Hate Speech.pdf", "Niramay_Mar_2024_internship_44298.pdf","Niramay_Mar_2024_internship_44298.pdf"
+    "Supervised Learning.pdf", "Advanced Algorithm .pdf", "unsupervised learning.pdf", "Niramay_Jan_2024_participation_44298.pdf", "Niramay_Jan_2024_project_completion_Hate Speech.pdf", "Niramay_Mar_2024_internship_44298.pdf", "Niramay_Mar_2024_internship_44298.pdf"
 ];
 let certi_link = [
-    "https://www.coursera.org/account/accomplishments/verify/VHZLMGDZHBH5", "https://www.1stop.ai/verify-certificate", "https://www.1stop.ai/verify-certificate", "https://www.1stop.ai/verify-certificate"
+    "https://www.coursera.org/account/accomplishments/verify/VHZLMGDZHBH5", "https://www.coursera.org/account/accomplishments/verify/HHYGWTETWD7T", "https://www.coursera.org/account/accomplishments/verify/QXUJG6MM6XUQ", "https://www.1stop.ai/verify-certificate", "https://www.1stop.ai/verify-certificate", "https://www.1stop.ai/verify-certificate"
 ];
+
 (async () => {
     const container1 = document.createElement("div");
     document.querySelector(".name").appendChild(container1);
@@ -93,7 +99,7 @@ let certi_link = [
     for (const item of passionArray) {
         await addItem(item, container2, 400);
     }
-    
+
     const container4 = document.createElement("div");
     document.querySelector(".aboutParas").appendChild(container4);
     await delay(200);
@@ -105,24 +111,33 @@ let certi_link = [
                 </p>
             </div>
             <div class="para animate">
-                <h2 class="head animate">FIELD</h2>
-                <p class="about_para animate">Has fostered a deep interest in the mathematical and logical foundations
+                <h2 class="head animate">INTEREST</h2>
+                <p class="about_para animate">Fostered a deep interest in the mathematical and logical foundations
                     of ML & DL Algorithms</p>
             </div>
             <div class="para animate">
-                <h2 class="head animate">SKILLS</h2>
-                <p class="about_para animate">Possess a good grasp of Data
-                    Structures, Algorithms, and other core computer science concepts</p>
+                <h2 class="head animate">FIELD</h2>
+                <p class="about_para animate">Mathematical and Logical skills in Supervised Learning, Unsupervised Learning, Advanced Algorithms, and Reinforcement Learning. </p>
             </div>
             <div class="para animate ">
                 <h2 class="head animate">SKILLS</h2>
-                <p class="about_para animate">Developed few basic projects utilizing HTML, CSS, JavaScript, and
-                    Express.js in web development</p>
+                <p class="about_para animate">
+                Possess a good grasp of Data
+                    Structures, Algorithms, HTML, CSS, JavaScript,
+                    Express.jsa nd other core computer science concepts.</p>
             </div>
-        </div>`;
+        </div>`
 
     await delay(500);
-
+    
+    const container11 = document.createElement("div");
+    document.querySelector(".arrow").appendChild(container11);
+    container11.innerHTML=`
+    <div class="arrow">
+        <img width="20px" src="down-arrow-svgrepo-com.svg" alt="">
+        <img width="20px"src="down-arrow-svgrepo-com.svg" alt="">
+    </div>
+    `
     const container6 = document.createElement("div");
     document.querySelector(".proj_head").appendChild(container6);
     for (const item of projectArray) {
@@ -133,12 +148,46 @@ let certi_link = [
         await addProject(headingArray[i], detailsArray[i], linkArray[i]);
     }
 
+    const container15 = document.createElement("div")
+    document.querySelector(".internBody").appendChild(container15)
+    container15.innerHTML=`
+    <div class="internBody">
+        <div class="internbody">
+            <h2 class="internHead"> Personifwy</h2>
+            <p class="internPara"> March '23 - May '23 (2 months) • Remote</p>
+            <h4 class="internTxt">
+                • Projects:
+                <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Engineered a Hate Speech Detection system using Decision Tree
+                Classifier with an
+                accuracy of 88%.
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Developed a Spam SMS Classifier leveraging machine learning algorithm Naive Bayes, which reduced unsolicited message complaints.
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Conducted comprehensive credit EDA (Exploratory Data Analysis) to optimize risk assessment and factors influencing creditworthiness.
+                <br>
+                <br>
+                • Cleaned and Analyzed the raw dataset with python libraries (NumPy, pandas,
+                matplotlib, seaborne, re, skit-learn)
+                <br>
+                • Incorporated various in-built machine learning models to build these projects.
+            </h4>
+        </div>
+    </div>`
+
+    const container13 = document.createElement("div");
+    document.querySelector(".title").appendChild(container13);
+    for (const item of internArray) {
+        await addItem(item, container13, 200);
+    }
+
     const container12 = document.createElement("div");
     document.querySelector(".certHead").appendChild(container12);
     for (const item of certifcateArray) {
         await addItem(item, container12, 200);
     }
-    
+
     for (let i = 0; i < certi_name.length; i++) {
         await addCertificate(certi_name[i], certi_img[i], certi_link[i]);
     }
