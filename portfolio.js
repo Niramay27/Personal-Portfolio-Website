@@ -124,7 +124,7 @@ let certi_link = [
                 <p class="about_para animate">
                 Possess a good grasp of Data
                     Structures, Algorithms, HTML, CSS, JavaScript,
-                    Express.jsa nd other core computer science concepts.</p>
+                    Express.js and other core computer science concepts.</p>
             </div>
         </div>`
 
@@ -154,7 +154,7 @@ let certi_link = [
     <div class="internBody">
         <div class="internbody">
             <h2 class="internHead"> Personifwy</h2>
-            <p class="internPara"> March '23 - May '23 (2 months) • Remote</p>
+            <p class="internPara"> March '24 - May '24 (2 months) • Remote</p>
             <h4 class="internTxt">
                 • Projects:
                 <br>
@@ -202,7 +202,7 @@ let certi_link = [
     document.querySelector(".resume_txt").appendChild(container8);
     container8.innerHTML =
         `<div class="resume_txt animate">
-            <h3>You can Download my resume here: </h3>
+            <h3>You can download my resume here: </h3>
             <a href="Niramay Resume.pdf" download>
                 <button class="resume_download graph_btn">Click</button>
             </a>
