@@ -57,29 +57,31 @@ nav a {
 }
 
 /* Intro Section */
-.name,
 .passion {
     color: wheat;
     text-align: center;
-    margin: 20px;
-    padding: 20px;
+    padding: 1.5vw;
     font-family: "Fira Code", monospace;
     font-weight: 400;
     font-style: normal;
 }
 
 .name {
-    margin: 130px;
-    margin-bottom: 50px;
-    padding-top: 70px;
-    letter-spacing: 20px;
+    margin: 9.028vw;
+    margin-bottom: 3.472vw;
+    padding-top: 4.861vw;
+    letter-spacing: 1.389vw;
+    color: wheat;
+    text-align: center;
+    font-family: "Fira Code", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .passion {
-    letter-spacing: 10px;
+    letter-spacing: 0.694vw;
     align-items: center;
 }
-
 /* About Section */
 .about {
     margin-top: 40px;
