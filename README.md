@@ -1,7 +1,8 @@
 # My Portfolio Website
 
-Welcome to my portfolio website! 🎉  
-This website is a showcase of my projects, skills, and learning journey as I delve into the fields of **Artificial Intelligence**, **Machine Learning**, **Robotics**, and **Computer Vision**.
+Welcome to my portfolio website! 🎉 
+
+This website is a showcase of my projects, skills, and learning journey.
 
 You can view the website live [here](https://portfolio-y344.onrender.com/).
 
