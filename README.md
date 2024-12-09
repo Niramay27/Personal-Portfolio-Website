@@ -8,7 +8,7 @@ You can view the website live [here](https://portfolio-y344.onrender.com/).
 
 ## Features
 
-- **Responsive Design**: The website is fully responsive, ensuring a seamless experience across devices.
+- **Responsive Design**: The website is responsive, ensuring a good experience across devices.
 - **Interactive Navbar**: Easily navigate through sections like "About Me", "Projects", "Skills", and my **Learning Journey Timeline**.
 - **Projects Section**: Displays a curated list of projects I've worked on, including links to GitHub repositories.
 - **Timeline Section**: A dedicated page that visually represents my learning journey, educational milestones, and growth in the tech world.
