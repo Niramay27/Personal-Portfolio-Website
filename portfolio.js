@@ -51,6 +51,9 @@ let passionArray = [
     "Developer -- ", "Researcher -- ", "Programmer"
 ];
 
+let workArray = [
+    "C","U","R","R","E","N","T"," ","W","O","R","K"];
+
 let projectArray = [
     "P", "R", "O", "J", "E", "C", "T", "S"
 ];
@@ -97,12 +100,12 @@ let certi_link = [
     const container2 = document.createElement("div");
     document.querySelector(".passion").appendChild(container2);
     for (const item of passionArray) {
-        await addItem(item, container2, 400);
+        await addItem(item, container2, 200);
     }
 
     const container4 = document.createElement("div");
     document.querySelector(".aboutParas").appendChild(container4);
-    await delay(200);
+    await delay(150);
     container4.innerHTML =
         `<div class="aboutParas">
             <div class="para animate">
@@ -112,18 +115,17 @@ let certi_link = [
             </div>
             <div class="para animate">
                 <h2 class="head animate">INTEREST</h2>
-                <p class="about_para animate">Fostered a deep interest in the mathematical and logical foundations
-                    of ML & DL Algorithms</p>
+                <p class="about_para animate">Fostered a deep interest in Data Science, Machine Learning and Deep Learning models, Computer Vision and Robotics </p>
             </div>
             <div class="para animate">
                 <h2 class="head animate">FIELD</h2>
-                <p class="about_para animate">Mathematical and Logical skills in Supervised Learning, Unsupervised Learning, Advanced Algorithms, and Reinforcement Learning. </p>
+                <p class="about_para animate"> Artificial Intelligence with focus in Data Science (Data Analysis, Predictive Models), DL architecture and models, Computer Vision </p>
             </div>
             <div class="para animate ">
                 <h2 class="head animate">SKILLS</h2>
                 <p class="about_para animate">
-                Possess a good grasp of Data
-                    Structures, Algorithms, HTML, CSS, JavaScript,
+                Numpy, Pandas, Matplotlib, Sklearn, Pytorch, C/C++, Data
+                    Structures, Algorithms, JavaScript,
                     Express.js and other core computer science concepts.</p>
             </div>
         </div>`
@@ -138,10 +140,37 @@ let certi_link = [
         <img width="20px"src="down-arrow-svgrepo-com.svg" alt="">
     </div>
     `
+    const container16 = document.createElement("div");
+    document.querySelector(".current_work").appendChild(container16);
+    for (const item of workArray) {
+        await addItem(item, container16, 150);
+    }
+
+    const container17 = document.createElement("div")
+    document.querySelector(".workBody").appendChild(container17)
+    container17.innerHTML=`
+    <div class="workBody">
+        <div class="workbody">
+            <h2 class="workHead"> MOON LABS, IISER Bhopal</h2>
+            <p class="workPara"> December '24 - Present • On-Site</p>
+            <h4 class="workText">
+                Problem to solve:
+                <br>
+                Optimizing the hyperparameters for camera and IMU configurations in OpenVINS. This involves determining the optimal number of sensors, their placement, and operating frequencies to improve system performance. Additionally, converting the OpenVINS codebase to Python, making it more modular and enabling easy integration of different algorithms. 
+                <br>
+                <br>
+                Currently, I am learning Computer Vision and Robotics that will be used in the project.
+                <br>
+                <br>
+                For details visit: <a class="link" target="__blank"href="https://docs.openvins.com/"> OpenVINS</a>
+            </h4>
+        </div>
+    </div>`
+
     const container6 = document.createElement("div");
     document.querySelector(".proj_head").appendChild(container6);
     for (const item of projectArray) {
-        await addItem(item, container6, 200);
+        await addItem(item, container6, 150);
     }
 
     for (let i = 0; i < headingArray.length; i++) {
@@ -179,13 +208,13 @@ let certi_link = [
     const container13 = document.createElement("div");
     document.querySelector(".title").appendChild(container13);
     for (const item of internArray) {
-        await addItem(item, container13, 200);
+        await addItem(item, container13, 150);
     }
 
     const container12 = document.createElement("div");
     document.querySelector(".certHead").appendChild(container12);
     for (const item of certifcateArray) {
-        await addItem(item, container12, 200);
+        await addItem(item, container12, 150);
     }
 
     for (let i = 0; i < certi_name.length; i++) {
@@ -196,7 +225,7 @@ let certi_link = [
     const container7 = document.createElement("div");
     document.querySelector(".resHead").appendChild(container7);
     for (const item of resumeArray) {
-        await addItem(item, container7, 200);
+        await addItem(item, container7, 150);
     }
     const container8 = document.createElement("div");
     document.querySelector(".resume_txt").appendChild(container8);
@@ -210,7 +239,7 @@ let certi_link = [
     const container9 = document.createElement("div");
     document.querySelector(".cont_head").appendChild(container9);
     for (const item of contactMe) {
-        await addItem(item, container9, 200);
+        await addItem(item, container9, 150);
     }
     const container10 = document.createElement("div");
     document.querySelector(".images").appendChild(container10);

@@ -127,7 +127,41 @@ nav a {
     border-radius: 20px;
     border: 2px solid rgb(27, 162, 252);
 }
+/* Current Work section */
+.current_work {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: "Fira Code", monospace;
+    font-weight: 400;
+    color: wheat;
+    letter-spacing: 20px;
+}
 
+.workbody{
+    width: 80vw;
+    margin: auto;
+    padding: 25px;
+    border-radius: 20px;
+    word-wrap: break-word;
+    background-color: rgb(53, 53, 53);
+}
+.workHead{
+    color: rgb(246, 92, 92);
+}
+.workPara{
+    color: wheat;
+}
+.workText {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+}
+.link{
+    color: wheat;
+
+}
 /* Projects Section */
 .proj_head {
     margin-top: 70px;
