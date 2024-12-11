@@ -72,13 +72,13 @@ let certifcateArray = [
     "C", "E", "R", "T", "I", "F", "I", "C", "A", "T", "E", "S"
 ];
 let headingArray = [
-    "Hate Speech Detection", "Spam SMS Classifier", "Credit EDA", "Hostel Accomodation", "Portfolio Website", "News App", "Music Player "
+    "Credit EDA", "Bollywood Face Match","Basic ML Projects","Portfolio Website", "News App", "Music Player","Hostel Accomodation"
 ];
 let detailsArray = [
-    "Used Decision Tree Classifier algorithm to detect Hate Speech on Twitter data", "Used Naive Bayes model to classify mails as Spam or Ham", "Efficiently used Data Exploration Skills to optimize risk assessment and factors influencing creditworthiness", "Flask application designed to allocate rooms to groups based on their uploaded CSV files containing group and hostel data.", "Creatively designed this very own portfolio website using HTML,CSS,JS", "A web news application that uses api to fetch news and displays it categorically", "A beginner project of responsive music player with limited functionalities"
+    "Efficiently used Data Exploration and Model development skills to analyse the credit data.","A transfer learning project utilizing ResNet50 to match an uploaded face image with the most likely Bollywood celebrity.","Designed a Hate Speech Detector and Spam SMS Classifier using Machine Learning algorithms" , "Creatively designed this very own portfolio website using HTML,CSS,JS", "A web news application that uses api to fetch news and displays it categorically", "A beginner project of responsive music player with limited functionalities","Flask application designed to allocate rooms to groups based on their uploaded CSV files containing group and hostel data."
 ];
 let linkArray = [
-    "https://github.com/Niramay27/Basic-ML-projects", "https://github.com/Niramay27/Basic-ML-projects", "https://github.com/Niramay27/Basic-ML-projects", "https://github.com/Niramay27/Digitalization-of-the-Hospitality-Process", "https://portfolio-y344.onrender.com/", "https://github.com/Niramay27/news_app", "https://github.com/Niramay27/music-player/tree/main"
+    "https://github.com/Niramay27/Credit_EDA","https://github.com/Niramay27/Bollywood_face_similarity","https://github.com/Niramay27/Basic-ML-projects","https://github.com/Niramay27/Personal-Portfolio-Website", "https://github.com/Niramay27/news_app", "https://github.com/Niramay27/music-player/tree/main","https://github.com/Niramay27/Digitalization-of-the-Hospitality-Process"
 ];
 
 let certi_name = [
