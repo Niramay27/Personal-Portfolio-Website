@@ -231,8 +231,8 @@ let certi_link = [
     document.querySelector(".resume_txt").appendChild(container8);
     container8.innerHTML =
         `<div class="resume_txt animate">
-            <h3>You can download my resume here: </h3>
-            <a href="Niramay Resume.pdf" download>
+            <h3>You can view my resume here: </h3>
+            <a href="Resume.pdf" target="_blank">
                 <button class="resume_download graph_btn">Click</button>
             </a>
         </div>`
