@@ -232,7 +232,7 @@ let certi_link = [
     container8.innerHTML =
         `<div class="resume_txt animate">
             <h3>You can view my resume here: </h3>
-            <a href="Resume.pdf" target="_blank">
+            <a href="Niramay Resume.pdf" target="_blank">
                 <button class="resume_download graph_btn">Click</button>
             </a>
         </div>`
