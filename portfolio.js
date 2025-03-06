@@ -72,13 +72,13 @@ let certifcateArray = [
     "C", "E", "R", "T", "I", "F", "I", "C", "A", "T", "E", "S"
 ];
 let headingArray = [
-    "Credit EDA", "Bollywood Face Match","Basic ML Projects","Portfolio Website", "News App", "Music Player","Hostel Accomodation"
+    "Credit EDA", "Bollywood Face Match", "Visual Odometry","Basic ML Projects","Portfolio Website", "News App", "Music Player","Hostel Accomodation"
 ];
 let detailsArray = [
-    "Efficiently used Data Exploration and Model development skills to analyse the credit data.","A transfer learning project utilizing ResNet50 to match an uploaded face image with the most likely Bollywood celebrity.","Designed a Hate Speech Detector and Spam SMS Classifier using Machine Learning algorithms" , "Creatively designed this very own portfolio website using HTML,CSS,JS", "A web news application that uses api to fetch news and displays it categorically", "A beginner project of responsive music player with limited functionalities","Flask application designed to allocate rooms to groups based on their uploaded CSV files containing group and hostel data."
+    "Efficiently used Data Exploration and Model development skills to analyse the credit data.","A transfer learning project utilizing ResNet50 to match an uploaded face image with the most likely Bollywood celebrity.","Estimated the camera’s motion from a sequence of images, successfully reconstructed the vehicle’s trajectory and evaluated the accuracy using ground truth data.","Designed a Hate Speech Detector and Spam SMS Classifier using Machine Learning algorithms" , "Creatively designed this very own portfolio website using HTML,CSS,JS", "A web news application that uses api to fetch news and displays it categorically", "A beginner project of responsive music player with limited functionalities","Flask application designed to allocate rooms to groups based on their uploaded CSV files containing group and hostel data."
 ];
 let linkArray = [
-    "https://github.com/Niramay27/Credit_EDA","https://github.com/Niramay27/Bollywood_face_similarity","https://github.com/Niramay27/Basic-ML-projects","https://github.com/Niramay27/Personal-Portfolio-Website", "https://github.com/Niramay27/news_app", "https://github.com/Niramay27/music-player/tree/main","https://github.com/Niramay27/Digitalization-of-the-Hospitality-Process"
+    "https://github.com/Niramay27/Credit_EDA","https://github.com/Niramay27/Bollywood_face_similarity","https://github.com/Niramay27/Visual_Odometry_on_KITTI","https://github.com/Niramay27/Basic-ML-projects","https://github.com/Niramay27/Personal-Portfolio-Website", "https://github.com/Niramay27/news_app", "https://github.com/Niramay27/music-player/tree/main","https://github.com/Niramay27/Digitalization-of-the-Hospitality-Process"
 ];
 
 let certi_name = [
@@ -110,23 +110,21 @@ let certi_link = [
         `<div class="aboutParas">
             <div class="para animate">
                 <h2 class="head animate">COLLEGE</h2>
-                <p class="about_para animate">Pursuing a BS in Engineering Science at IISER Bhopal with a CGPA of 9.6
+                <p class="about_para animate">Pursuing a BS in Engineering Science at IISER Bhopal with a CGPA of 9.46
                 </p>
             </div>
             <div class="para animate">
                 <h2 class="head animate">INTEREST</h2>
-                <p class="about_para animate">Fostered a deep interest in Data Science, Machine Learning and Deep Learning models, Computer Vision and Robotics </p>
+                <p class="about_para animate">Fostered a deep interest in Data Science, Machine Learning and Deep Learning models, NLP, Computer Vision, Robotics </p>
             </div>
             <div class="para animate">
                 <h2 class="head animate">FIELD</h2>
-                <p class="about_para animate"> Artificial Intelligence with focus in Data Science (Data Analysis, Predictive Models), DL architecture and models, Computer Vision </p>
+                <p class="about_para animate"> Artificial Intelligence with interest in Data Science (Data Analysis, Predictive Models), Computer Vision, NLP, and Robotics </p>
             </div>
             <div class="para animate ">
                 <h2 class="head animate">SKILLS</h2>
                 <p class="about_para animate">
-                Numpy, Pandas, Matplotlib, Sklearn, Pytorch, C/C++, Data
-                    Structures, Algorithms, JavaScript,
-                    Express.js and other core computer science concepts.</p>
+                Numpy, Pandas, Matplotlib, Sklearn, Pytorch, C/C++, HTML, CSS, JavaScript, and core computer science concepts.</p>
             </div>
         </div>`
 
@@ -151,18 +149,15 @@ let certi_link = [
     container17.innerHTML=`
     <div class="workBody">
         <div class="workbody">
-            <h2 class="workHead"> MOON LABS, IISER Bhopal</h2>
-            <p class="workPara"> December '24 - Present • On-Site</p>
+            <h2 class="workHead"> IIT Roorkee</h2>
+            <p class="workPara"> January '25 - Present • Remote</p>
             <h4 class="workText">
                 Problem to solve:
                 <br>
-                Optimizing the hyperparameters for camera and IMU configurations in OpenVINS. This involves determining the optimal number of sensors, their placement, and operating frequencies to improve system performance. Additionally, converting the OpenVINS codebase to Python, making it more modular and enabling easy integration of different algorithms. 
+                Develop a robust Speech-to-Text Translation (ST) model for low-resource Indian languages (Hindi, Bengali, Tamil) that accurately converts spoken English into written text in these languages.
                 <br>
                 <br>
-                Currently, I am learning Computer Vision and Robotics that will be used in the project.
-                <br>
-                <br>
-                For details visit: <a class="link" target="__blank"href="https://docs.openvins.com/"> OpenVINS</a>
+                Developed end-to-end pipeline for fine-tuning Automatic Speech Recognition and Machine Translation models (Whisper and IndicTrans2). Now, I am working on preparing the dataset to feed into these models. Once, we train these models separately, we want to perform joint training to evaluate the results. 
             </h4>
         </div>
     </div>`
@@ -232,7 +227,7 @@ let certi_link = [
     container8.innerHTML =
         `<div class="resume_txt animate">
             <h3>You can view my resume here: </h3>
-            <a href="Niramay Resume.pdf" target="_blank">
+            <a href="Resume_vsl.pdf" target="_blank">
                 <button class="resume_download graph_btn">Click</button>
             </a>
         </div>`
@@ -247,9 +242,6 @@ let certi_link = [
         `<div class="images animate">
             <a target="__blank"href="https://mail.google.com/mail/?view=cm&fs=1&to=niramaympatel@gmail.com">
                 <img class="mailImg"src="mail.svg" alt="mail">
-            </a>
-            <a target="__blank"href="https://www.linkedin.com/in/niramay-patel-481a08288/">
-                <img class="linkdinImg"src="icons8-linkedin.svg" alt="linkdin">
             </a>
             <a target="__blank"href="https://x.com/m_niramay">
                 <img class="twitterImg"src="icons8-twitter.svg" alt="twitter">
