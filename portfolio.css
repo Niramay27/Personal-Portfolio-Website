@@ -228,44 +228,58 @@ nav a {
     letter-spacing: 20px;
 }
 
-.internbody{
-    width: 80vw;
-    margin: auto;
-    padding: 25px;
-    border-radius: 20px;
-    word-wrap: break-word;
-    background-color: rgb(53, 53, 53);
-}
-.internHead{
-    color: rgb(246, 92, 92);
-}
-.internPara{
-    color: wheat;
+.internship-wrap {
+  position: relative;
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 0 64px; /* space for side buttons */
 }
 
-.internTxt {
-    color: white;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 19px;
+.intern-card { /* container that will hold your existing .internbody block */
+  border-radius: 20px;
+  background: rgb(53, 53, 53);
+  color: white;
+  padding: 25px;
+  min-height: 260px; /* keeps height stable */
 }
 
-.buttons {
-    margin-top: 20px;
+/* side nav buttons */
+.intern-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.25);
+  background: rgba(255,255,255,.08);
+  color: #fff;
+  font-size: 28px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background .15s, transform .15s, opacity .15s;
 }
+.intern-nav:hover { background: rgba(255,255,255,.16); }
+.intern-nav:active { transform: translateY(-50%) scale(.96); }
+.intern-prev { left: 12px; }
+.intern-next { right: 12px; }
 
-button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
+/* keep your existing typography */
+.internHead { color: rgb(246, 92, 92); margin: 0 0 6px; }
+.internPara { color: wheat; margin: 0 0 14px; }
+.internTxt  { color: white; font-family: "Lato", sans-serif; font-weight: 400; font-size: 19px; line-height: 1.6; }
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .internship-wrap { padding: 0 48px; }
+  .intern-nav { width: 40px; height: 40px; font-size: 24px; }
 }
-
-button:hover {
-    background-color: #0056b3;
+@media (max-width: 480px) {
+  .internship-wrap { padding: 0 18px 56px; }
+  .intern-nav { top: auto; bottom: -18px; transform: none; }
+  .intern-prev { left: 18px; }
+  .intern-next { right: 18px; }
 }
 
 /* Certificates Section */

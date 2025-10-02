@@ -110,16 +110,16 @@ let certi_link = [
         `<div class="aboutParas">
             <div class="para animate">
                 <h2 class="head animate">COLLEGE</h2>
-                <p class="about_para animate">Pursuing a BS in Engineering Science at IISER Bhopal with a CGPA of 9.46
+                <p class="about_para animate">Pursuing a BS in Engineering Science at IISER Bhopal with a CGPA of 9.50
                 </p>
             </div>
             <div class="para animate">
                 <h2 class="head animate">INTEREST</h2>
-                <p class="about_para animate">Fostered a deep interest in Data Science, Machine Learning and Deep Learning models, NLP, Computer Vision, Robotics </p>
+                <p class="about_para animate">Fostered interest in Data Science, Machine Learning, Deep Learning with specilisation in NLP </p>
             </div>
             <div class="para animate">
                 <h2 class="head animate">FIELD</h2>
-                <p class="about_para animate"> Artificial Intelligence with interest in Data Science (Data Analysis, Predictive Models), Computer Vision, NLP, and Robotics </p>
+                <p class="about_para animate"> Improving in Speech & Language in NLP, alongside Bias and Fairness in Artificial Intelligence  </p>
             </div>
             <div class="para animate ">
                 <h2 class="head animate">SKILLS</h2>
@@ -149,15 +149,32 @@ let certi_link = [
     container17.innerHTML=`
     <div class="workBody">
         <div class="workbody">
-            <h2 class="workHead"> IIT Roorkee</h2>
-            <p class="workPara"> January '25 - Present • Remote</p>
+            <h2 class="workHead"> IBM Research in collaboration with IIT Roorkee </h2>
+            <p class="workPara"> August '25 - Present • Remote</p>
             <h4 class="workText">
-                Problem to solve:
-                <br>
-                Develop a robust Speech-to-Text Translation (ST) model for low-resource Indian languages (Hindi, Bengali, Tamil) that accurately converts spoken English into written text in these languages.
-                <br>
-                <br>
-                Developed end-to-end pipeline for fine-tuning Automatic Speech Recognition and Machine Translation models (Whisper and IndicTrans2). Now, I am working on preparing the dataset to feed into these models. Once, we train these models separately, we want to perform joint training to evaluate the results. 
+            ◦ Working on advancing speech-centric large language models (LLMs) for multilingual and low-resource settings.
+            <br>
+            <br>
+            ◦ Exploring methods that integrate external knowledge and retrieval mechanisms to improve robustness and
+            translation quality.
+            </h4>
+        </div>
+    </div>`
+
+    container17.style.marginBottom = "4vh";
+
+    const container18 = document.createElement("div")
+    document.querySelector(".workBody").appendChild(container18)
+    container18.innerHTML=`
+    <div class="workBody">
+        <div class="workbody">
+            <h2 class="workHead"> VisDom Lab, IISER Bhopal </h2>
+            <p class="workPara"> March '25 - Present • On Site</p>
+            <h4 class="workText">
+            ◦ Worked on fairness in deep learning, analyzing SEBRA under label noise, studying bias propagation in ParlerTTS, and exploring coreset selection for fairness-aware training.
+            <br>
+            <br>
+            ◦ This work led to a first-author paper on regularization for robust generalization under distribution shifts.
             </h4>
         </div>
     </div>`
@@ -172,33 +189,131 @@ let certi_link = [
         await addProject(headingArray[i], detailsArray[i], linkArray[i]);
     }
 
-    const container15 = document.createElement("div")
-    document.querySelector(".internBody").appendChild(container15)
-    container15.innerHTML=`
-    <div class="internBody">
+    /* ===== Internships Carousel ===== */
+
+    // 1) Data for each internship (edit/add freely)
+    const internshipsData = [
+    {
+    org: "IBM Research × IIT Roorkee",
+    dates: "Aug '25 – Present • Remote",
+    bullets: [
+        "1. Advanced speech-centric LLMs for multilingual and low-resource settings.",
+        "2. Investigated retrieval-augmented and knowledge-integrated methods to enhance robustness and translation quality.",
+        "3. Explored architectural trade-offs between efficiency and scalability in speech LLM pipelines.",
+        "",
+        "• Strengthened expertise in speech processing, multilingual NLP, and large-scale model training.",
+        "• Acquired skills in Hugging Face Transformers, PyTorch Lightning, and distributed training workflows."
+    ]
+    },
+    {
+        org: "VisDom Lab, IISER Bhopal",
+        dates: "Mar '25 – Present • On Site",
+        bullets: [
+            "1. Analyzed fairness in deep learning with a focus on SEBRA under label noise.",
+            "2. Studied bias propagation in ParlerTTS and applied coreset selection for fairness-aware training.",
+            "3. Authored a first-author research paper on regularization strategies for robust generalization under distribution shifts.",
+            "",
+            "• Gained expertise in bias/fairness evaluation frameworks and fairness-driven optimization.",
+            "• Built strong skills in PyTorch, data-centric AI, and empirical ML research practices."
+        ]
+    },
+    {
+        org: "IIT Roorkee",
+        dates: "Jan '25 – Jul '25 • Remote",
+        bullets: [
+            "1. Researched robustness of speech-to-text models under real-world noisy acoustic conditions.",
+            "2. Designed and implemented a structured hyperparameter tuning framework to evaluate noise robustness.",
+            "3. Proposed a novel evaluation protocol for measuring stability across diverse environments.",
+            "",
+            "• Strengthened skills in speech recognition, signal processing, and experimental design.",
+            "• Acquired proficiency in Kaldi/ESPnet, model fine-tuning, and acoustic feature engineering."
+        ]
+    },
+    {
+        org: "Personifwy",
+        dates: "March '24 - May '24 (2 months) • Remote",
+        bullets: [
+        "Projects:",
+        "1. Engineered a Hate Speech Detection system using Decision Tree with 88% accuracy.",
+        "2. Developed a Spam SMS Classifier with Naive Bayes; reduced unsolicited message complaints.",
+        "3. Conducted comprehensive credit EDA to optimize risk assessment and understand creditworthiness.",
+        "",
+        "• Cleaned & analyzed datasets using NumPy, pandas, matplotlib, seaborn, re, scikit-learn.",
+        "• Leveraged multiple in-built ML models to build these projects."
+        ]
+    },
+    {
+        org: "MOON Lab, IISER Bhopal",
+        dates: "Dec '24 - Jan '25 • On Site",
+        bullets: [
+        "1. Explored core concepts in Computer Vision, with a focus on OpenVINS, MSKCF, and SLAM algorithms.",
+        "2. Studied the mathematical foundations of sensor fusion, emphasizing probabilistic estimation methods.",
+        "3. Implemented Visual Odometry on the KITTI dataset, validating theoretical understanding through practice.",
+        "",
+        "• Developed proficiency in computer vision libraries and tools such as OpenCV, NumPy, and Matplotlib.",
+        "• Strengthened skills in algorithmic thinking and applied linear algebra for perception and robotics tasks."
+        ]
+    }
+
+    // add more entries here as needed…
+    ];
+
+    // 2) Build the carousel shell in the DOM
+    const internSection = document.querySelector(".internBody");
+    const wrap = document.createElement("div");
+    wrap.className = "internship-wrap";
+    wrap.innerHTML = `
+    <button class="intern-nav intern-prev" aria-label="Previous internship">‹</button>
+    <div id="internCard" class="intern-card"></div>
+    <button class="intern-nav intern-next" aria-label="Next internship">›</button>
+    `;
+    internSection.appendChild(wrap);
+
+    // 3) Render function
+    let internIndex = 0;
+    const internCard = document.getElementById("internCard");
+    function renderInternship(i) {
+    const it = internshipsData[i];
+    const bulletsHTML = it.bullets
+        .map(line => (line.trim() === "" ? "<br>" : `&nbsp;&nbsp;&nbsp;&nbsp;${line}`))
+        .join("<br>");
+
+    internCard.innerHTML = `
         <div class="internbody">
-            <h2 class="internHead"> Personifwy</h2>
-            <p class="internPara"> March '24 - May '24 (2 months) • Remote</p>
-            <h4 class="internTxt">
-                • Projects:
-                <br>
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Engineered a Hate Speech Detection system using Decision Tree
-                Classifier with an
-                accuracy of 88%.
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Developed a Spam SMS Classifier leveraging machine learning algorithm Naive Bayes, which reduced unsolicited message complaints.
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Conducted comprehensive credit EDA (Exploratory Data Analysis) to optimize risk assessment and factors influencing creditworthiness.
-                <br>
-                <br>
-                • Cleaned and Analyzed the raw dataset with python libraries (NumPy, pandas,
-                matplotlib, seaborne, re, skit-learn)
-                <br>
-                • Incorporated various in-built machine learning models to build these projects.
-            </h4>
+        <h2 class="internHead">${it.org}</h2>
+        <p class="internPara">${it.dates}</p>
+        <h4 class="internTxt">${bulletsHTML}</h4>
         </div>
-    </div>`
+    `;
+    }
+    renderInternship(internIndex);
+
+    // 4) Navigation (loops)
+    const prevBtnIntern = wrap.querySelector(".intern-prev");
+    const nextBtnIntern = wrap.querySelector(".intern-next");
+    prevBtnIntern.addEventListener("click", () => {
+    internIndex = (internIndex - 1 + internshipsData.length) % internshipsData.length;
+    renderInternship(internIndex);
+    });
+    nextBtnIntern.addEventListener("click", () => {
+    internIndex = (internIndex + 1) % internshipsData.length;
+    renderInternship(internIndex);
+    });
+
+    // 5) Optional: keyboard + swipe
+    window.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") prevBtnIntern.click();
+    if (e.key === "ArrowRight") nextBtnIntern.click();
+    });
+    let touchStartXIntern = null;
+    internCard.addEventListener("touchstart", (e) => touchStartXIntern = e.changedTouches[0].clientX, {passive:true});
+    internCard.addEventListener("touchend", (e) => {
+    if (touchStartXIntern == null) return;
+    const dx = e.changedTouches[0].clientX - touchStartXIntern;
+    if (Math.abs(dx) > 50) (dx > 0 ? prevBtnIntern : nextBtnIntern).click();
+    touchStartXIntern = null;
+    }, {passive:true});
+    /* ===== End Internships Carousel ===== */
 
     const container13 = document.createElement("div");
     document.querySelector(".title").appendChild(container13);
@@ -227,7 +342,7 @@ let certi_link = [
     container8.innerHTML =
         `<div class="resume_txt animate">
             <h3>You can view my resume here: </h3>
-            <a href="Resume_vsl.pdf" target="_blank">
+            <a href="Resume.pdf" target="_blank">
                 <button class="resume_download graph_btn">Click</button>
             </a>
         </div>`
