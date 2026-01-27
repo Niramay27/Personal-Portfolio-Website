@@ -48,11 +48,14 @@ let nameArray = [
 ];
 
 let passionArray = [
-    "Developer -- ", "Researcher -- ", "Programmer"
+    "Think -- ", "Code -- ", "Run -- ", "Repeat"
 ];
 
+let pubArray = [
+    "P", "U", "B", "L", "I", "C", "A", "T", "I", "O", "N", "S"];
+
 let workArray = [
-    "C","U","R","R","E","N","T"," ","W","O","R","K"];
+    "C", "U", "R", "R", "E", "N", "T", " ", "W", "O", "R", "K"];
 
 let projectArray = [
     "P", "R", "O", "J", "E", "C", "T", "S"
@@ -110,21 +113,21 @@ let certi_link = [
         `<div class="aboutParas">
             <div class="para animate">
                 <h2 class="head animate">COLLEGE</h2>
-                <p class="about_para animate">Pursuing a BS in Engineering Science at IISER Bhopal with a CGPA of 9.50
+                <p class="about_para animate">BS in Computer Science at Indian Institute of Science Education and Research, Bhopal with a CPI of 9.33/10
                 </p>
             </div>
             <div class="para animate">
                 <h2 class="head animate">INTEREST</h2>
-                <p class="about_para animate">Fostered interest in Data Science, Machine Learning, Deep Learning with specilisation in NLP </p>
+                <p class="about_para animate">Bias & Fairness in AI, Deep Learning Based Speech Systems, Reinforcement Learning </p>
             </div>
             <div class="para animate">
-                <h2 class="head animate">FIELD</h2>
-                <p class="about_para animate"> Improving in Speech & Language in NLP, alongside Bias and Fairness in Artificial Intelligence  </p>
+                <h2 class="head animate">Research</h2>
+                <p class="about_para animate"> Robustness analysis in deep learning models. Structured noise–based parameterization methods for Speech models </p>
             </div>
             <div class="para animate ">
                 <h2 class="head animate">SKILLS</h2>
                 <p class="about_para animate">
-                Numpy, Pandas, Matplotlib, Sklearn, Pytorch, C/C++, HTML, CSS, JavaScript, and core computer science concepts.</p>
+                PyTorch, Hugging Face, scikit-learn, model fine-tuning, regularization, loss design, CNNs, Transformers, Linux, Git</p>
             </div>
         </div>`
 
@@ -138,6 +141,29 @@ let certi_link = [
         <img width="20px"src="down-arrow-svgrepo-com.svg" alt="">
     </div>
     `
+
+    const container19 = document.createElement("div");
+    document.querySelector(".pub").appendChild(container19);
+    for (const item of pubArray) {
+        await addItem(item, container19, 150);
+    }
+
+    const container20 = document.createElement("div")
+    document.querySelector(".pub_body").appendChild(container20)
+    container20.innerHTML=`
+        <h2 class="pubHead">Regulating Internal Evidence Flows for Robust Learning Under Spurious Correlations </h2>
+        <h4 class="pubText">
+        Accepted at ICLR 2026
+        <h2 class="pubHead"> Robustness to Skin Type Using Fused Upweighting </h2>
+        <h4 class="pubText">
+        Submitted to MICCAI 2026
+        <h2 class="pubHead"> Hyperparameter Strategies for Noise-Robust Speech-to-Text </h2>
+        <h4 class="pubText">
+        Submitted to ACL ARR 2026
+        </h4>`
+
+    container20.style.marginBottom = "4vh";
+    
     const container16 = document.createElement("div");
     document.querySelector(".current_work").appendChild(container16);
     for (const item of workArray) {
@@ -149,14 +175,14 @@ let certi_link = [
     container17.innerHTML=`
     <div class="workBody">
         <div class="workbody">
-            <h2 class="workHead"> IBM Research in collaboration with IIT Roorkee </h2>
-            <p class="workPara"> August '25 - Present • Remote</p>
+            <h2 class="workHead">IIT Roorkee </h2>
+            <p class="workPara"> Jan '25 - Present • Remote</p>
             <h4 class="workText">
-            ◦ Working on advancing speech-centric large language models (LLMs) for multilingual and low-resource settings.
+            ◦ Improved robustness of speech-to-text models under real-world noise using a controllable procedural noise simulator and PSD-based spectral analysis.
             <br>
+            ◦ Conducted large-scale robustness experiments with real and synthetic noise across clean and noisy acoustic conditions.
             <br>
-            ◦ Exploring methods that integrate external knowledge and retrieval mechanisms to improve robustness and
-            translation quality.
+            ◦ Proposed a structured hyperparameter tuning and evaluation framework to quantify stability and robustness across environments.
             </h4>
         </div>
     </div>`
@@ -171,10 +197,11 @@ let certi_link = [
             <h2 class="workHead"> VisDom Lab, IISER Bhopal </h2>
             <p class="workPara"> March '25 - Present • On Site</p>
             <h4 class="workText">
-            ◦ Worked on fairness in deep learning, analyzing SEBRA under label noise, studying bias propagation in ParlerTTS, and exploring coreset selection for fairness-aware training.
+            ◦ Conducted research on fairness in deep learning, including bias ranking–based debiasing, fairness analysis of the Descript Audio Codec (DAC), and fairness-aware coreset selection.
             <br>
+            ◦ Proposed Evidence-Gated Suppression (EGS), a regularizer that suppresses class-conditional neuron evidence to improve worst-group robustness without group labels.
             <br>
-            ◦ This work led to a first-author paper on regularization for robust generalization under distribution shifts.
+            ◦ Developed a hardness- and group-aware reweighting framework to improve fairness and robustness in dermatology image classification across Fitzpatrick skin types.
             </h4>
         </div>
     </div>`

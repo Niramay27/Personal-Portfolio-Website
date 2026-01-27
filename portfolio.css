@@ -127,6 +127,54 @@ nav a {
     border-radius: 20px;
     border: 2px solid rgb(27, 162, 252);
 }
+
+/* Publications section */
+.pub {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: "Fira Code", monospace;
+    font-weight: 400;
+    color: wheat;
+    letter-spacing: 20px;
+}
+
+.pub_body {
+    width: 80vw;
+    margin: auto;
+    padding: 25px;
+    border-radius: 20px;
+    word-wrap: break-word;
+    background-color: rgb(53, 53, 53);
+}
+.pubHead{
+    color: rgb(246, 92, 92);
+    font-size: 20px;
+}
+.pubPara{
+    color: wheat;
+}
+.pubText {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+.link{
+    color: wheat;
+
+}
+/* Projects Section */
+.proj_head {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: "Fira Code", monospace;
+    font-weight: 400;
+    color: wheat;
+    letter-spacing: 20px;
+}
+
 /* Current Work section */
 .current_work {
     margin-top: 70px;
