@@ -55,7 +55,7 @@ let pubArray = [
     "P", "U", "B", "L", "I", "C", "A", "T", "I", "O", "N", "S"];
 
 let workArray = [
-    "C", "U", "R", "R", "E", "N", "T", " ", "W", "O", "R", "K"];
+    "E", "X", "P", "E", "R", "I", "E", "N", "C", "E"];
 
 let projectArray = [
     "P", "R", "O", "J", "E", "C", "T", "S"
@@ -113,16 +113,16 @@ let certi_link = [
         `<div class="aboutParas">
             <div class="para animate">
                 <h2 class="head animate">COLLEGE</h2>
-                <p class="about_para animate">BS in Computer Science at Indian Institute of Science Education and Research, Bhopal with a CPI of 9.33/10
+                <p class="about_para animate">BS in Computer Science at Indian Institute of Science Education and Research, Bhopal with a CPI of 9.29/10
                 </p>
             </div>
             <div class="para animate">
                 <h2 class="head animate">INTEREST</h2>
-                <p class="about_para animate">Bias & Fairness in AI, Deep Learning Based Speech Systems, Reinforcement Learning </p>
+                <p class="about_para animate">Robotics, control systems, and artificial intelligence — building adaptive robots that combine model-based control with neural networks and RL </p>
             </div>
             <div class="para animate">
                 <h2 class="head animate">Research</h2>
-                <p class="about_para animate"> Robustness analysis in deep learning models. Structured noise–based parameterization methods for Speech models </p>
+                <p class="about_para animate"> Robustness and fairness in deep learning models. Terrain-adaptive legged robot control </p>
             </div>
             <div class="para animate ">
                 <h2 class="head animate">SKILLS</h2>
@@ -154,12 +154,15 @@ let certi_link = [
         <h2 class="pubHead">Regulating Internal Evidence Flows for Robust Learning Under Spurious Correlations </h2>
         <h4 class="pubText">
         Accepted at ICLR 2026
-        <h2 class="pubHead"> Robustness to Skin Type Using Fused Upweighting </h2>
+        <h2 class="pubHead"> Bias-Aware Dual-Stream Vision Transformer for Fair Skin Lesion Classification </h2>
         <h4 class="pubText">
-        Submitted to MICCAI 2026
+        Submitted to WACV 2027
+        <h2 class="pubHead"> Foundation-Model Guided Pooling for Robust Image Classification Under Background Bias </h2>
+        <h4 class="pubText">
+        Submitted to BMVC 2026
         <h2 class="pubHead"> Hyperparameter Strategies for Noise-Robust Speech-to-Text </h2>
         <h4 class="pubText">
-        Submitted to ACL ARR 2026
+        Submitted to IEEE SLT 2026
         </h4>`
 
     container20.style.marginBottom = "4vh";
@@ -170,24 +173,24 @@ let certi_link = [
         await addItem(item, container16, 150);
     }
 
-    const container17 = document.createElement("div")
-    document.querySelector(".workBody").appendChild(container17)
-    container17.innerHTML=`
+    const container21 = document.createElement("div")
+    document.querySelector(".workBody").appendChild(container21)
+    container21.innerHTML=`
     <div class="workBody">
         <div class="workbody">
-            <h2 class="workHead">IIT Roorkee </h2>
-            <p class="workPara"> Jan '25 - Present • Remote</p>
+            <h2 class="workHead"> RoboLAND, USC — IUSSTF–Viterbi Summer Research Intern </h2>
+            <p class="workPara"> May 2026 – July 2026 • On Site</p>
             <h4 class="workText">
-            ◦ Improved robustness of speech-to-text models under real-world noise using a controllable procedural noise simulator and PSD-based spectral analysis.
+            ◦ Built a salamander-inspired quadruped robot with a passive flexible spine and an ATI 6-axis force/torque sensor to measure terrain-dependent body dynamics during locomotion.
             <br>
-            ◦ Conducted large-scale robustness experiments with real and synthetic noise across clean and noisy acoustic conditions.
+            ◦ Developed MATLAB and MuJoCo simulation pipelines for walk, trot, bound, and swim gaits, including contact-aware servo spine models, virtual sensing, and strain-to-force estimation..
             <br>
-            ◦ Proposed a structured hyperparameter tuning and evaluation framework to quantify stability and robustness across environments.
+            ◦ Designed a real-time terrain recognition pipeline using a 42-D gait-cycle descriptor and nearest-centroid inference, obtaining 70–100% class-wise accuracy.
             </h4>
         </div>
     </div>`
 
-    container17.style.marginBottom = "4vh";
+     container21.style.marginBottom = "4vh";
 
     const container18 = document.createElement("div")
     document.querySelector(".workBody").appendChild(container18)
@@ -195,13 +198,32 @@ let certi_link = [
     <div class="workBody">
         <div class="workbody">
             <h2 class="workHead"> VisDom Lab, IISER Bhopal </h2>
-            <p class="workPara"> March '25 - Present • On Site</p>
+            <p class="workPara"> March 2025 - April 2026 • On Site</p>
             <h4 class="workText">
             ◦ Conducted research on fairness in deep learning, including bias ranking–based debiasing, fairness analysis of the Descript Audio Codec (DAC), and fairness-aware coreset selection.
             <br>
             ◦ Proposed Evidence-Gated Suppression (EGS), a regularizer that suppresses class-conditional neuron evidence to improve worst-group robustness without group labels.
             <br>
             ◦ Developed a hardness- and group-aware reweighting framework to improve fairness and robustness in dermatology image classification across Fitzpatrick skin types.
+            </h4>
+        </div>
+    </div>`
+
+     container18.style.marginBottom = "4vh";
+    
+    const container17 = document.createElement("div")
+    document.querySelector(".workBody").appendChild(container17)
+    container17.innerHTML=`
+    <div class="workBody">
+        <div class="workbody">
+            <h2 class="workHead">IIT Roorkee </h2>
+            <p class="workPara"> Jan 2025 - June 2026 • Remote</p>
+            <h4 class="workText">
+            ◦ Improved robustness of speech-to-text models under real-world noise using a controllable procedural noise simulator and PSD-based spectral analysis.
+            <br>
+            ◦ Conducted large-scale robustness experiments with real and synthetic noise across clean and noisy acoustic conditions.
+            <br>
+            ◦ Proposed a structured hyperparameter tuning and evaluation framework to quantify stability and robustness across environments.
             </h4>
         </div>
     </div>`

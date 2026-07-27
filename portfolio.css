@@ -88,7 +88,10 @@ nav a {
 }
 
 .aboutParas {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;   /* <-- this is the key fix */
 }
 
 .head {
@@ -145,8 +148,13 @@ nav a {
     padding: 25px;
     border-radius: 20px;
     word-wrap: break-word;
+    /* remove background-color from here */
+}
+
+.pub_body:not(:empty) {
     background-color: rgb(53, 53, 53);
 }
+
 .pubHead{
     color: rgb(246, 92, 92);
     font-size: 20px;
